@@ -24,20 +24,20 @@ const init = async () => {
     const bar1 = bars[symbol][0]
     const bar2 = bars[symbol][1]
     // if
-    // bar1 closes  < bar1 opens - downtrending
-    // bar2 closes > bar2 opening - uptrending
-    // bar2 closes > bar1 opens - higher than last sale
-    // bar2 opens < bar1 close
+    // bar1 high < bar 2 high
+    // bar1 open > bar 2 open
+    // bar1 close < bar 2 close
+    // bar1 low > bar 2 low
     // bar2 volume > bar1 volume
     //peppers
 
     if (
       bar1 &&
       bar2 &&
-      bar1.c < bar1.o &&
-      bar2.c > bar2.o &&
-      bar2.c > bar1.o &&
-      bar2.o < bar1.c &&
+      bar1.h < bar2.h &&
+      bar1.o > bar2.o &&
+      bar1.c < bar2.c &&
+      bar1.l > bar2.l &&
       bar2.v > bar1.v
     ) {
       //get account an check buying power & willing to spend
