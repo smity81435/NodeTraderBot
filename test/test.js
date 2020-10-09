@@ -1,7 +1,7 @@
 require('dotenv').config()
 const assert = require('assert')
 const expect = require('expect.js')
-const getDownTendingStock = require('../lib/getDownTrendingStock')
+const getDownTrendingStock = require('../lib/getDownTrendingStock')
 const getBars = require('../lib/getBars')
 const getAccount = require('../lib/getAccount')
 const { buyMarket, sellStop, sellLimit } = require('../lib/order')
@@ -10,7 +10,7 @@ const oneMinute = 60000
 describe('Stock Value', () => {
   describe('#getDownTrendingStock()', () => {
     it('should return a stock value', () => {
-      const stock = getDownTendingStock()
+      const stock = getDownTrendingStock()
       expect(stock).to.contain('ANGI')
     })
   })
