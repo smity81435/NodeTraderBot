@@ -1,7 +1,7 @@
 require('dotenv').config()
 const getDownTendingStock = require('./lib/getDownTrendingStock')
 const getBars = require('./lib/getBars')
-const getAccountValue = require('./lib/getAccountValue')
+const getAccount = require('./lib/getAccount')
 const { buyMarket, sellStop, sellLimit } = require('./lib/order')
 
 const init = async () => {
@@ -41,7 +41,7 @@ const init = async () => {
       bar2.v > bar1.v
     ) {
       //get account an check buying power & willing to spend
-      const account = await getAccountValue()
+      const account = await getAccount()
       const willingtoSpend = account.buying_power * 0.1
       console.log('willing to spend', willingtoSpend)
 
