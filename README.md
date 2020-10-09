@@ -10,6 +10,7 @@ Obviously built in Node.js, ya egg.
 ### Dependencies
 - Node Fetch for API calls
 - DotEnv for environment variable storage
+- Mocha for testing.
 - Expect.js for testing.
 
 ## Functions
