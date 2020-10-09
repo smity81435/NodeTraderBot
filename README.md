@@ -30,15 +30,15 @@ Obviously built in Node.js, _ya egg._
 - Checks for a bullish engulfing pattern _JSON_
 - Returns the object with requested bars
 
-### buyMarket({Symbol, Qty})
+### buyMarket({Symbol, Qty}) - Needs a Test
 - Places a market order
 - Returns the order object if successful _JSON_ (with array inside)
 
-### sellStop({Symbol, Price, Qty}) 
+### sellStop({Symbol, Price, Qty})  - Needs a Test
 - Places a stoploss order (normally after the buy order)
 - Returns the order object _JSON_
 
-### sellLimit({Symbol, Price, Qty}) 
+### sellLimit({Symbol, Price, Qty}) Needs a Test
 - Places a limit order 
 - Returns the order object _JSON_
 
