@@ -1,5 +1,5 @@
 require('dotenv').config()
-const getDownTendingStock = require('./lib/getDownTrendingStock')
+const getDownTrendingStock = require('./lib/getDownTrendingStock')
 const getBars = require('./lib/getBars')
 const getAccount = require('./lib/getAccount')
 const { buyMarket, sellStop, sellLimit } = require('./lib/order')
@@ -8,7 +8,7 @@ const init = async () => {
   const oneMinute = 60000
   // recognize pattern
   //find downtrending stock
-  const symbol = await getDownTendingStock()
+  const symbol = await getDownTrendingStock()
   //check every minute
   const checkAndOrder = async () => {
     const now = new Date()
