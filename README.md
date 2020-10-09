@@ -22,19 +22,19 @@ Obviously built in Node.js, _ya egg._
 ### getAccount()
 - Returns the account information prior to trade to get the account balance. _JSON_
 
-### getBars() - Symbol, Start Date, End Date
+### getBars({Symbol, Start Date, End Date})
 - Checks for a bullish engulfing pattern _JSON_
 - Returns the object with requested bars
 
-### buyMarket() - Symbol, Qty
+### buyMarket({Symbol, Qty})
 - Places a market order
 - Returns the order object if successful _JSON_ (with array inside)
 
-### sellStop() - Symbol, Price, Qty
+### sellStop({Symbol, Price, Qty}) 
 - Places a stoploss order (normally after the buy order)
 - Returns the order object _JSON_
 
-### sellLimit() - Symbol, Price, Qty
+### sellLimit({Symbol, Price, Qty}) 
 - Places a limit order 
 - Returns the order object _JSON_
 
