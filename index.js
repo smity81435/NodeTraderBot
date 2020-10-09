@@ -16,7 +16,7 @@ const init = async () => {
     const start = new Date(now - 2 * oneMinute).toISOString()
 
     const end = new Date(now - oneMinute).toISOString()
-    console.log('Checking Bars', end, start)
+    console.log('Getting Bars', end, start)
 
     const bars = await getBars({ symbol, start, end })
 
@@ -57,7 +57,7 @@ const init = async () => {
       sellStop({ symbol, price: bar1.l, qty })
 
       //set 100% limit sell at 2:1 profit ratio i.e. either loose $100 or make $200
-      const profitTarget = (purchase.price - bar1.c) * 2 + purchase.price
+      const profitTarget = (purchase.filled_avg_price - bar1.c) * 2 + purchase.filled_avg_price
       sellLimit({ symbol, price: profitTarget, qty })
     }
   }
