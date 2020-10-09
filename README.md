@@ -13,6 +13,10 @@ Obviously built in Node.js, _ya egg._
 - Mocha for testing.
 - Expect.js for testing.
 
+## Commands
+- `node index` starts the program
+- `npm test` runs the tests 
+
 ## Functions
 
 ### getDownTrendingStock()
