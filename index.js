@@ -42,6 +42,7 @@ const init = async () => {
     ) {
       //get account an check buying power & willing to spend
       const account = await getAccount()
+      console.log('Account Balance: $' + account.portfolio_value)
       const willingtoSpend = account.buying_power * 0.1
       console.log('willing to spend', willingtoSpend)
 
