@@ -1,0 +1,19 @@
+{
+  "name": "cryptobot",
+  "version": "1.0.0",
+  "description": "Crypto trading bot",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "Douglas Smith",
+  "license": "ISC"
+}
