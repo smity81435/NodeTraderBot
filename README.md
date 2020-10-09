@@ -34,11 +34,11 @@ Obviously built in Node.js, _ya egg._
 - Places a market order
 - Returns the order object if successful _JSON_ (with array inside)
 
-### sellStop({Symbol, Price, Qty})  - Needs a Test
+### sellStop({Symbol, Price, Qty}) - Needs a Test
 - Places a stoploss order (normally after the buy order)
 - Returns the order object _JSON_
 
-### sellLimit({Symbol, Price, Qty}) Needs a Test
+### sellLimit({Symbol, Price, Qty}) - Needs a Test
 - Places a limit order 
 - Returns the order object _JSON_
 
